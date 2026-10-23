@@ -1,67 +1,46 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First Interactive Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a simple HTML document.</p>
-    <button> click me</button>
-    <br>
-    <h2>Student registraion</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input id="name" type="text" placeholder="Enter your name" required>
-        <br>
-        <label for="mobile number">Mobile Number:</label>
-        <input id="mobile number" type="number" placeholder="Enter your mobile number" required>
-        <br>
-        <label for="email">Email:</label>
-        <input id="email" type="email" placeholder="Enter your email" required>
-        <br>
-        <label for="password">Password:</label>
-        <input id="password" type="password" placeholder="Enter your password with at least 8 characters" required>
-        <br>
-        <label for="confirm password">Confirm Password:</label>
-        <input id="confirm password" type="password" placeholder="Confirm your password" required>
-        <br>
-        <label for="gender">Gender:</label>
-        <input id="gender" type="radio" name="gender" value="male" required> Male
-        <input id="gender" type="radio" name="gender" value="female" required> Female
-        <input id="gender" type="radio" name="gender" value="other" required> Other
-        <br>            
-        <label for="dob">Date of Birth:</label>
-        <input id="dob" type="date" required>   
-        <br>
-        <label for="address">Address:</label>
-        <input id="address" type="text" placeholder="Enter your address" required>
-        <br>
-        <label for="city">City:</label>
-        <input id="city" type="text" placeholder="Enter your city" required>
-        <br>    
-        <input type="checkbox" id="checkbox" required>
-        <label for="checkbox">I agree to the terms and conditions</label>
-       
-        <br>    
-        <input type="submit" value="Register">
-    </form>
-    <p>each components used in the form are</p>
-    <p>1. label : Used to provide a description for an input element</p>
-    <p>2. input : Used to create an input field where users can enter data</p>
-    <p>3. form : Used to create an HTML form for user input</p>
-    <p>4. button : Used to create a clickable button</p>
-    <p>5. br : Used to create a line break</p>
-    <p>6. for : Used to associate a label with an input element</p>
-    <p>7. placeholder : Used to provide a hint to the user 
-        about what to enter in the input field</p>
-    <p>8.id: The id attribute is used to uniquely
-         identify an element in the HTML document.</p>
-    <p>9.type: The type attribute is used to specify the type of input element.</p>
-    <p>10.name: The name attribute is used to specify the name of an input element.</p>
-    <p>11. value: The value attribute is used to specify the value of an input element.</p>  
-    <p>12. required: The required attribute is used to specify that an input element must be filled out before submitting the form.</p>
+
+    <!-- HTML: Create elements -->
+    <h1 id="heading">Hello Student!</h1>
+
+    <button id="btn">Click Me</button>
+
+    <!-- JavaScript: Add behavior -->
+    <script>
+        let h = document.getElementById("heading");
+        let b = document.getElementById("btn");
+
+        b.addEventListener("click", function() {
+            h.textContent = "Welcome to JavaScript!";
+        });
+    </script>
 
 </body>
 </html>

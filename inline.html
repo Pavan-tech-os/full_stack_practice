@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Element Selector */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #main-header {
+            font-size: 24px;
+        }
+
+        /* Group Selector */
+        h1, h2, p {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Descendant Selector */
+        div p {
+            color: gray;
+        }
+
+        /* Child Selector */
+        ul > li {
+            list-style-type: square;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1 + p {
+            margin-top: 0;
+        }
+
+        /* Attribute Selector */
+        [disabled] {
+            opacity: 0.5;
+        }
+
+        /* Attribute Value Selector */
+        input[type="text"] {
+            border: 1px solid black;
+        }
+
+        /* Pseudo-class Selector */
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* First-child Pseudo-class */
+        li:first-child {
+            font-weight: bold;
+        }
+
+        /* First-letter Pseudo-element */
+        p::first-letter {
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="selectors.png" alt="CSS Selectors" width="700" height="400">
+
+    <!-- Element Selector -->
+    <p>This is a blue paragraph.</p>
+
+    <!-- Class Selector -->
+    <p class="highlight">Yellow background.</p>
+
+    <!-- ID Selector -->
+    <h1 id="main-header">Main Header</h1>
+
+    <!-- Group Selector -->
+    <h2>Group Selector Heading</h2>
+
+    <!-- Descendant Selector -->
+    <div>
+        <p>Paragraph inside div.</p>
+    </div>
+
+    <!-- Child Selector -->
+    <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+
+    <!-- Adjacent Sibling Selector -->
+    <h1>Adjacent Heading</h1>
+    <p>Paragraph immediately after heading.</p>
+
+    <!-- Attribute Selector -->
+    <button disabled>Disabled Button</button>
+
+    <!-- Attribute Value Selector -->
+    <input type="text" placeholder="Enter your name">
+
+    <!-- Pseudo-class Selector -->
+    <a href="https://example.com">Hover over this link</a>
+
+    <!-- First-child Pseudo-class -->
+    <ol>
+        <li>First child (bold)</li>
+        <li>Second child</li>
+    </ol>
+
+    <!-- First-letter Pseudo-element -->
+    <p>First letter is enlarged.</p>
+
+</body>
+</html>
